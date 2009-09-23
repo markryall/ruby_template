@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+irb -Ilib -rlib/console_helper

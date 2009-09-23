@@ -6,15 +6,17 @@ Creating a rubygen template would be a more sensible long term solution but this
 
 h1. Usage
 
-%. bin/paths%
+. bin/paths
 
 Sourcing the paths script will set the GEM_HOME, GEM_PATH and PATH environment variables so that all gem dependencies are isolated to a gem repository that lives in this project.
 
-%install_gems%
+install_gems
 
-The %install_gems% script will now be on the path.  Running it will install any gems (rake only right now) to an isolated gem repository in %gems/repository%.
+The install_gems script will now be on the path.  Running it will install any gems (rake only right now) to an isolated gem repository in gems/repository
 
 Now, go for it adding new code - add any gems you need to the %gems/gem_deps.rb% file
+
+It also includes wirble and sketch 
 
 h1. Future Stuff
 
