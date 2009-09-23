@@ -6,14 +6,22 @@ Creating a rubygen template would be a more sensible long term solution but this
 
 h1. Usage
 
+In a new shell session run:
+
 . bin/paths
 
-Sourcing the paths script will set the GEM_HOME, GEM_PATH and PATH environment variables so that all gem dependencies are isolated to a gem repository that lives in this project.
+The paths script will set the GEM_HOME, GEM_PATH and PATH environment variables so that all gem dependencies are isolated to a gem repository that lives in this project.  Apart from any gem commands (such as spec, cucumber and rake) it will put a few commands from the bin directory on your path:
 
-install_gems
+* install_gems
 
-The install_gems script will now be on the path.  Running it will install any gems (rake only right now) to an isolated gem repository in gems/repository
+Running install_gems will install any gems you don't already have listed in the gems/gem_deps.rb file to an isolated gem repository in gems/repository
 
-Now, go for it adding new code - add any gems you need to the %gems/gem_deps.rb% file
+Adding any additional gems to gems/gem_deps.rb and your collaborators will be able to easily install them.
 
-It also includes a console command that initialises wirble and sketches (and whatever else you want to load in lib/console_helper.rb)
+This uses the gem_collector.rb file written by Mike Williams (mdub).
+
+* console
+
+It also includes a console command that launches irb initialising wirble and sketches.
+
+Anything else you add to the lib/console_helper.rb file will be automatically loaded.
