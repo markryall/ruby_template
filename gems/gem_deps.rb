@@ -1,4 +1,5 @@
 gem 'rake', '0.8.7'
 gem 'wirble', '0.1.3'
+gem 'sketches', '0.1.0'
 gem 'cucumber', '0.3.102'
 gem 'rspec', '1.2.8'

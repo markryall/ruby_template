@@ -16,8 +16,4 @@ The install_gems script will now be on the path.  Running it will install any ge
 
 Now, go for it adding new code - add any gems you need to the %gems/gem_deps.rb% file
 
-It also includes wirble and sketch 
-
-h1. Future Stuff
-
-Probably add cucumber (cucumber.yml) and rspec folders and typical helper files.
+It also includes a console command that initialises wirble and sketches (and whatever else you want to load in lib/console_helper.rb)
