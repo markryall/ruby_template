@@ -1,0 +1,4 @@
+export HERE=`pwd`
+export GEM_HOME=$HERE/gems/repository
+export GEM_PATH=$GEM_HOME
+export PATH=$GEM_HOME/bin:$HERE/bin:$PATH
