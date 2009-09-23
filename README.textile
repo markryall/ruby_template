@@ -1,0 +1,21 @@
+h1. Ruby Template
+
+This is just a basic folder structure that I get sick of recreating everytime I want to create a new project
+
+Creating a rubygen template would be a more sensible long term solution but this'll do for the moment.
+
+h1. Usage
+
+%. bin/paths%
+
+Sourcing the paths script will set the GEM_HOME, GEM_PATH and PATH environment variables so that all gem dependencies are isolated to a gem repository that lives in this project.
+
+%install_gems%
+
+The %install_gems% script will now be on the path.  Running it will install any gems (rake only right now) to an isolated gem repository in %gems/repository%.
+
+Now, go for it adding new code - add any gems you need to the %gems/gem_deps.rb% file
+
+h1. Future Stuff
+
+Probably add cucumber (cucumber.yml) and rspec folders and typical helper files.
